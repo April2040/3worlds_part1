@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“对等关税”股市冲击：一个“三个世界”立体剖面</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 3. Framer Motion via CDN -->
+    <script type="module">
+        import { animate, stagger } from "https://cdn.framer.com/motion/framer-motion.es.js";
+
+        // 为关键内容块应用入场动画，确保即使脚本失败内容也可见
+        animate(
+            ".motion-reveal",
+            { opacity: [0, 1], y: [20, 0] },
+            { delay: stagger(0.2), duration: 0.7, ease: "easeOut" }
+        );
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #0f172a; /* bg-slate-900 */
+            color: #cbd5e1; /* text-slate-300 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+
+        <header class="text-center mb-16 motion-reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                “对等关税”股市冲击
+            </h1>
+            <p class="mt-4 text-lg text-slate-400">一个“三个世界”的立体剖面</p>
+        </header>
+
+        <!-- Section 1: 世界 1 的客观轨迹 -->
+        <section class="mb-16 motion-reveal">
+            <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300"><i class="fas fa-chart-line mr-3"></i>世界 1：客观轨迹</h2>
+            <div class="space-y-8 border-l-2 border-slate-700 ml-4 pl-8">
+                <!-- Timeline Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-10 top-1 h-4 w-4 bg-cyan-400 rounded-full"></div>
+                    <p class="font-mono text-sm text-slate-500">4月2日</p>
+                    <h4 class="font-bold text-xl text-white">一刀切“10% 基线”关税</h4>
+                    <p class="text-red-400 font-semibold text-lg flex items-center"><i class="fas fa-arrow-down-long mr-2"></i>S&P 500: -15% (年内最大单日跌幅)</p>
+                    <p class="text-slate-400 mt-1">含义：市场恐慌输入型通胀与供应链脱钩。</p>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-10 top-1 h-4 w-4 bg-cyan-400 rounded-full"></div>
+                    <p class="font-mono text-sm text-slate-500">4月7日 – 5月5日</p>
+                    <h4 class="font-bold text-xl text-white">传出“差异化让步”可能</h4>
+                    <p class="text-green-400 font-semibold text-lg flex items-center"><i class="fas fa-arrow-up-long mr-2"></i>S&P 500: 连涨9天, 累计 +8%</p>
+                    <p class="text-slate-400 mt-1">含义：投资者押注谈判与产业回流。</p>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="relative">
+                    <div class="absolute -left-10 top-1 h-4 w-4 bg-cyan-400 rounded-full"></div>
+                    <p class="font-mono text-sm text-slate-500">5月12日</p>
+                    <h4 class="font-bold text-xl text-white">美中 90天“停火”</h4>
+                    <p class="text-green-400 font-semibold text-lg flex items-center"><i class="fas fa-arrow-up-long mr-2"></i>S&P 500: +3.3%</p>
+                    <p class="text-slate-400 mt-1">含义：贸易缓和即刻提振风险资产。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 世界 2 的情绪驱动 -->
+        <section class="mb-16 motion-reveal">
+            <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300"><i class="fas fa-brain mr-3"></i>世界 2：情绪与认知驱动</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <h4 class="font-bold text-lg text-white flex items-center"><i class="fas fa-bolt text-red-400 mr-3"></i>恐慌涌现</h4>
+                    <p class="text-slate-400 mt-2">4月2日跌幅远超模型预期，VIX指数飙升，反映“通胀+断链”双重焦虑。</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <h4 class="font-bold text-lg text-white flex items-center"><i class="fas fa-lightbulb text-yellow-300 mr-3"></i>自我修正</h4>
+                    <p class="text-slate-400 mt-2">大型资管机构发现企业可通过近岸外包稀释税负，认知由“末日论”转向“边际递减”。</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <h4 class="font-bold text-lg text-white flex items-center"><i class="fas fa-circle-question text-orange-400 mr-3"></i>再度动摇</h4>
+                    <p class="text-slate-400 mt-2">政策“回马枪”强化了不确定性折价，触发风险厌恶回摆。</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <h4 class="font-bold text-lg text-white flex items-center"><i class="fas fa-face-smile text-green-400 mr-3"></i>喘息乐观</h4>
+                    <p class="text-slate-400 mt-2">停火公告验证“谈判可行”信念，情绪急剧反转，外化为3.3%的单日大涨。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: 世界 3 的知识系统 -->
+        <section class="mb-16 motion-reveal">
+            <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300"><i class="fas fa-book-open-reader mr-3"></i>世界 3：知识与制度的“操作系统”</h2>
+            <div class="bg-slate-800 rounded-xl shadow-lg border border-slate-700 overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-950/50">
+                        <tr>
+                            <th class="p-4 font-semibold text-white">领域</th>
+                            <th class="p-4 font-semibold text-white">更新 / 反馈</th>
+                            <th class="p-4 font-semibold text-white">如何影响其余两界</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-bold text-slate-200">风险模型</td>
+                            <td class="p-4 text-slate-400">量化团队将“关税效用递减”写入新VaR场景，加入“近岸外包”参数。</td>
+                            <td class="p-4 text-slate-400">理论更新后，算法改变市场流动性 (→ 世界 1)。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-bold text-slate-200">联邦政策</td>
+                            <td class="p-4 text-slate-400">美联储议息纪要暗示“金融稳定优先”，短期观望。</td>
+                            <td class="p-4 text-slate-400">沟通锚定了利率区间，使投资者重新定价 (→ 世界 2)。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-700/30">
+                            <td class="p-4 font-bold text-slate-200">合同法</td>
+                            <td class="p-4 text-slate-400">律师修订交付合同的关税分摊条款，企业启动备选生产国条款。</td>
+                            <td class="p-4 text-slate-400">新条款生效后将重塑货物流向与关税基数 (→ 世界 1)。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Section 4: 三界互动链条 -->
+        <section class="mb-16 motion-reveal">
+            <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300"><i class="fas fa-sync-alt mr-3"></i>三界互动的动态链条</h2>
+            <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 text-center">
+                <div class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <!-- World 1 -->
+                    <div class="relative p-4">
+                        <div class="p-6 bg-slate-900 rounded-lg border border-cyan-500"><i class="fas fa-chart-line text-2xl text-cyan-400"></i><p class="mt-2 font-bold text-white">世界 1<br/>(关税&股价)</p></div>
+                        <i class="fas fa-long-arrow-alt-right text-slate-500 text-2xl absolute top-1/2 -right-8 transform -translate-y-1/2 hidden md:block"></i>
+                        <i class="fas fa-long-arrow-alt-down text-slate-500 text-2xl absolute bottom-0 left-1/2 transform -translate-x-1/2 md:hidden"></i>
+                    </div>
+                    <!-- World 2 -->
+                    <div class="relative p-4">
+                        <div class="p-6 bg-slate-900 rounded-lg border border-cyan-500"><i class="fas fa-brain text-2xl text-cyan-400"></i><p class="mt-2 font-bold text-white">世界 2<br/>(恐慌/乐观)</p></div>
+                        <i class="fas fa-long-arrow-alt-right text-slate-500 text-2xl absolute top-1/2 -right-8 transform -translate-y-1/2 hidden md:block"></i>
+                        <i class="fas fa-long-arrow-alt-down text-slate-500 text-2xl absolute bottom-0 left-1/2 transform -translate-x-1/2 md:hidden"></i>
+                    </div>
+                    <!-- World 3 -->
+                    <div class="relative p-4">
+                        <div class="p-6 bg-slate-900 rounded-lg border border-cyan-500"><i class="fas fa-book-open-reader text-2xl text-cyan-400"></i><p class="mt-2 font-bold text-white">世界 3<br/>(理论&制度)</p></div>
+                    </div>
+                </div>
+                <p class="mt-8 text-slate-400">关税跳升(1) → 恐慌下跌(2) → 机构修正模型(3) → 信心恢复推升股价(1) → 政策回摆再下跌(1) → 恐慌复燃(2) → 倒逼制度出招(3) → 达成临时均衡。</p>
+            </div>
+        </section>
+
+        <!-- Section 5: 投资启示 -->
+        <section class="motion-reveal">
+            <div class="bg-gradient-to-br from-slate-900 to-black p-8 rounded-xl border-2 border-cyan-500/50 shadow-2xl">
+                <h2 class="text-3xl font-bold text-center mb-8 text-white"><i class="fas fa-compass mr-3"></i>投资启示：寻找“韧性枢纽”</h2>
+                <div class="space-y-6">
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h4 class="font-bold text-cyan-300">世界 1：客观对冲</h4>
+                        <p class="text-slate-400">用期权对冲极端下跌；跟踪豁免清单与产能迁移，捕捉行业β差异。</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h4 class="font-bold text-cyan-300">世界 2：情绪量化</h4>
+                        <p class="text-slate-400">将新闻情绪、VIX纳入配置信号，避免一次性All-in/All-out。</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-lg">
+                        <h4 class="font-bold text-cyan-300">世界 3：制度前瞻</h4>
+                        <p class="text-slate-400">研判Fed与财政部组合拳；关注WTO仲裁、反制清单等文本级动向。</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-center text-lg text-slate-300">真正的优势在于：令自己的投资系统始终比政策和情绪“<strong class="text-cyan-400">快半步、慢半拍</strong>”——快半步洞察信号，慢半拍确认制度落地。</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
